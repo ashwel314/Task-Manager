@@ -1,0 +1,60 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0" version="29.3.8">
+  <diagram name="Page-1" id="x-bwmOf4rRAYSTKvpRbU">
+    <mxGraphModel dx="521" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="10dGlmUmzPon_zKMcpxW-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Task" vertex="1">
+          <mxGeometry height="220" width="340" x="500" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="10dGlmUmzPon_zKMcpxW-2" parent="10dGlmUmzPon_zKMcpxW-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- name: String&lt;div&gt;- priority: Priority&lt;/div&gt;&lt;div&gt;- end: Date&lt;/div&gt;&lt;div&gt;- est_time: int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="74" width="340" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="10dGlmUmzPon_zKMcpxW-3" parent="10dGlmUmzPon_zKMcpxW-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="340" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="10dGlmUmzPon_zKMcpxW-4" parent="10dGlmUmzPon_zKMcpxW-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;+ Task(name: String, priority: Priority, end: Date, est_time: int)&lt;/div&gt;+ getName(): String&lt;div&gt;+ getPriority(): Priority&lt;/div&gt;&lt;div&gt;+ getEndDate(): Date&lt;/div&gt;&lt;div&gt;+ getEstTime(): int&lt;/div&gt;&lt;div&gt;+ estStartDate(): Date&lt;/div&gt;" vertex="1">
+          <mxGeometry height="112" width="340" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="10dGlmUmzPon_zKMcpxW-5" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="TaskHandler" vertex="1">
+          <mxGeometry height="230" width="290" x="530" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="10dGlmUmzPon_zKMcpxW-6" parent="10dGlmUmzPon_zKMcpxW-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- currentTasks: PriorityQueue&lt;div&gt;- completed: Queue&lt;/div&gt;&lt;div&gt;- missed: Queue&lt;/div&gt;&lt;div&gt;- currentDate: Date&lt;/div&gt;" vertex="1">
+          <mxGeometry height="74" width="290" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="10dGlmUmzPon_zKMcpxW-7" parent="10dGlmUmzPon_zKMcpxW-5" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="290" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="10dGlmUmzPon_zKMcpxW-8" parent="10dGlmUmzPon_zKMcpxW-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ getCurrentTasks(): Iterable&lt;div&gt;+ getCompleted(): Iterable&lt;/div&gt;&lt;div&gt;+ getMissed: Iterable&lt;/div&gt;&lt;div&gt;+ refreshCurrentDate()&lt;/div&gt;&lt;div&gt;+ getCurrentDate: Date&lt;/div&gt;" vertex="1">
+          <mxGeometry height="122" width="290" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="10dGlmUmzPon_zKMcpxW-14" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&amp;lt;&amp;lt;ENUM&amp;gt;&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;Priority&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;LOW&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;MEDIUM&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;HIGH&lt;/p&gt;" vertex="1">
+          <mxGeometry height="140" width="150" x="150" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="10dGlmUmzPon_zKMcpxW-15" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&amp;lt;&amp;lt;ENUM&amp;gt;&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;Status&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;Completed&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;Incomplete&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;OVERDUE (SHAME)&lt;/p&gt;" vertex="1">
+          <mxGeometry height="140" width="150" x="930" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="10dGlmUmzPon_zKMcpxW-16" parent="1" style="html=1;whiteSpace=wrap;" value="Date" vertex="1">
+          <mxGeometry height="50" width="110" x="940" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="10dGlmUmzPon_zKMcpxW-17" parent="1" style="html=1;whiteSpace=wrap;" value="Queue" vertex="1">
+          <mxGeometry height="50" width="110" x="290" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="10dGlmUmzPon_zKMcpxW-18" parent="1" style="html=1;whiteSpace=wrap;" value="PriorityQueue" vertex="1">
+          <mxGeometry height="50" width="110" x="290" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="GCS5cm4aqPHud2FjqUFL-1" edge="1" parent="1" source="10dGlmUmzPon_zKMcpxW-8" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=0.465;exitY=0.988;exitDx=0;exitDy=0;exitPerimeter=0;" value="1">
+          <mxGeometry relative="1" x="-0.7421" y="15" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="665" y="460" />
+              <mxPoint x="670" y="460" />
+            </Array>
+            <mxPoint x="620" y="470" as="sourcePoint" />
+            <mxPoint x="670" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
